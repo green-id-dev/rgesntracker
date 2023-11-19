@@ -1,0 +1,25 @@
+server:
+  port: 3000
+
+db:
+  type: 'mysql'
+  port: 28179
+  database: 'rgesn'
+
+  jwt:
+    expiresIn: 86400
+
+crypto:
+  key: 'G9RR3kC33gOAYffpTTGwYxW5Ns5Ov2FA'
+  iv: 16
+  algorithm: 'aes-256-cbc'
+
+mail:
+  url: 'https://rgesn.meexr.fr'
+  host: 'smtp.gmail.com'
+  port: 587
+  secure: false
+  auth:
+    user: 'strouchaud@dev-id.fr'
+    pass: 'xqritbxeianubwuw'
+  

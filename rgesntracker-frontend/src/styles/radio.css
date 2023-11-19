@@ -1,0 +1,29 @@
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  font: inherit;
+  color: currentColor;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  color: green;
+  border-radius: 100%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #00BF7D;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}

@@ -1,0 +1,23 @@
+---
+
+import StepManager from "../components/StepManager";
+import MainLayout from "../layouts/MainLayout.astro";
+import { host } from "../utils/config";
+const { slug } = Astro.params;
+
+
+
+const response = await fetch(`${host}audit/${slug}`);
+const data = await response.json();
+console.log(data);
+if (data.error) {
+  return Astro.redirect("/404");
+}
+---
+
+<MainLayout title="Sustainable Checker">
+
+
+	<StepManager audits={data} client:load></StepManager>
+	
+</MainLayout>
