@@ -15,4 +15,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Credits
 * [RGESN](https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/) for providing the data
-* [Samuel Trouchaud, Daniel Doughan, Romane Dedieu]
+* [Samuel Trouchaud, Daniel Doughan] For the Development 
+* [Romane Dedieu] For the Design
