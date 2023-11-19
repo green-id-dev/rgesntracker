@@ -1,11 +1,11 @@
 module.exports = {
     apps: [
       {
-        name: "sustainable-checker",
+        name: "rgesn-tracker",
         script: "./dist/server/entry.mjs",
         env: {
           NODE_ENV: "development",
-          PORT: 4321,
+          PORT: 8080,
         },
       },
     ],
