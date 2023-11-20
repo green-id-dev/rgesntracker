@@ -14,10 +14,9 @@ const StepManager = ({audits = null}) => {
 
 
     useEffect(() => {
-        setStep(1);
-        /*if (criteres.length === criteresResult.length && criteresResult.length !== 0) {
+        if (criteres.length === criteresResult.length && criteresResult.length !== 0) {
             setStep(3);
-        }*/
+        }
     }, [criteresResult]);
 
     /*const saveAudit = async () => {
