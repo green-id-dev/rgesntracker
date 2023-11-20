@@ -18,7 +18,7 @@ const ProgressStepBar: React.FC<ProgressStepBarProps> = ({step}) => {
                     {[1, 2, 3].map((step, index) => (
                         <React.Fragment key={step}>
                             <div
-                                className={`step w-8 h-8 rounded-full bg-white border-2 border-black ${currentStep >= step ? '!bg-greenButton border-4' : ''} relative transition-all duration-300 ease-in-out`}>
+                                className={`step w-8 h-8 rounded-full border-2 border-black ${currentStep >= step ? 'bg-greenButton border-4' : 'bg-white'} relative transition-all duration-300 ease-in-out`}>
                                 {currentStep === step && <div className="active-step-indicator"/>}
                             </div>
                             {index < 2 && <div className="h-[2px] bg-black flex-grow mx-2"/>}

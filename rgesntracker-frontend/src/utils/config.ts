@@ -7,4 +7,4 @@ export const textHero = [
     }
 ]
 
-export const host = "http://localhost:3001/"
+export const host = "https://apirgesn.meexr.fr/"
