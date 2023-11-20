@@ -1,23 +1,31 @@
 ---
-
 import StepManager from "../components/StepManager";
 import MainLayout from "../layouts/MainLayout.astro";
-import { host } from "../utils/config";
-const { slug } = Astro.params;
+import {host} from "../utils/config";
+const {slug} = Astro.params;
 
+let data;
 
+try {
+    const response = await fetch(`${host}audit/${slug}`);
 
-const response = await fetch(`${host}audit/${slug}`);
-const data = await response.json();
-console.log(data);
-if (data.error) {
-  return Astro.redirect("/404");
+    if (!response.ok) {
+        data = {error: true, status: response.status};
+    } else {
+        data = await response.json();
+    }
+} catch (error) {
+    console.error("Erreur lors de la récupération des données:", error);
+    data = {error: true, status: 500};
 }
 ---
 
 <MainLayout title="Sustainable Checker">
+    {data.error ? (
+            <p>Erreur: Impossible de charger les données. Status: {data.status}</p>
+        // Vous pouvez aussi rediriger ou afficher un composant d'erreur ici
 
-
-	<StepManager audits={data} client:load></StepManager>
-	
+    ) : (
+            <StepManager audits={data} client:load></StepManager>
+    )}
 </MainLayout>

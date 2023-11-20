@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import GreyContainer from './GreyContainer.tsx';
 import TitleBlocks from './TitleBlocks.tsx';
 
@@ -14,8 +14,17 @@ interface AuditorInformationFormProps {
 }
 
 
-const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({ name, siteName, selectedSort, email, setName, setSiteName, setSelectedSort, setEmail }) => {
-    
+const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({
+                                                                           name,
+                                                                           siteName,
+                                                                           selectedSort,
+                                                                           email,
+                                                                           setName,
+                                                                           setSiteName,
+                                                                           setSelectedSort,
+                                                                           setEmail
+                                                                       }) => {
+
 
     const handleOnChange = (sortValue: string) => {
         setSelectedSort(sortValue);
@@ -23,7 +32,7 @@ const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({ name, s
 
     return (
         <GreyContainer>
-            <TitleBlocks text="Informations sur l’auditeur ou auditrice de l’audit" />
+            <TitleBlocks text="Informations sur l’auditeur ou auditrice de l’audit"/>
             <div className="grid gap-4 mt-4 md:grid-cols-2">
                 <div>
                     <label className="block text-gray-700 text-lg font-normal mb-2" htmlFor="site-url">
@@ -66,7 +75,8 @@ const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({ name, s
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
-                    <p className="text-sm text-gray-600 mt-2">L’adresse mail permettra de vous envoyer les liens de l’audit</p>
+                    <p className="text-sm text-gray-600 mt-2">L’adresse mail permettra de vous envoyer les liens de
+                        l’audit</p>
                 </div>
                 <div className='flex flex-col gap-3'>
                     <p className="text-lg text-black font-semibold">Afficher l’adresse mail dans l’audit ?</p>

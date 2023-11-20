@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import GreyContainer from './GreyContainer.tsx';
 import TitleBlocks from './TitleBlocks.tsx';
 
@@ -9,16 +9,16 @@ interface SiteInformationFormProps {
     setSiteName: (siteName: string) => void;
 }
 
-const SiteInformationForm: React.FC<SiteInformationFormProps> = ({ url, siteName, setUrl, setSiteName }) => {
+const SiteInformationForm: React.FC<SiteInformationFormProps> = ({url, siteName, setUrl, setSiteName}) => {
 
 
     return (
         <GreyContainer>
-            <TitleBlocks text="Informations sur le site à auditer" />
+            <TitleBlocks text="Informations sur le site à auditer"/>
             <div className="grid gap-4 mt-4 md:grid-cols-2">
                 <div>
                     <label className="block text-gray-700  text-lg font-normal mb-2" htmlFor="site-url">
-                        URL du site à auditer<label className='text-redStrong'> *</label> 
+                        URL du site à auditer<label className='text-redStrong'> *</label>
                     </label>
                     <input
                         className="appearance-none border-[1px] border-black rounded-2xl w-full p-4 text-sm text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -32,7 +32,7 @@ const SiteInformationForm: React.FC<SiteInformationFormProps> = ({ url, siteName
                 </div>
                 <div>
                     <label className="block text-gray-700 text-lg font-normal mb-2" htmlFor="site-name">
-                        Nom du site à auditer<label className='text-redStrong'> *</label> 
+                        Nom du site à auditer<label className='text-redStrong'> *</label>
                     </label>
                     <input
                         className="appearance-none border-[1px] border-black rounded-2xl w-full p-4 text-sm text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

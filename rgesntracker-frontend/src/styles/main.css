@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --form-control-color: #d1d5db;
-  font-family: Arial, Helvetica, sans-serif;
+    --form-control-color: #d1d5db;
+    font-family: Arial, Helvetica, sans-serif;
 }

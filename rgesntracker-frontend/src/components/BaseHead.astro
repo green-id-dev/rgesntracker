@@ -1,21 +1,20 @@
 ---
 export type Props = {
-	title?: string
-	description?: string
-	image?: { src: string; alt: string }
-	canonicalURL?: URL | null
-	pageType?: "website" | "article"
+    title?: string
+    description?: string
+    image?: { src: string; alt: string }
+    canonicalURL?: URL | null
+    pageType?: "website" | "article"
 }
-
 ---
 
 <!-- High Priority Global Metadata -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-<meta name="generator" content={Astro.generator} />
-<meta name="theme-color" content="#101828" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<meta name="generator" content={Astro.generator}/>
+<meta name="theme-color" content="#101828"/>
 
 <!-- Low Priority Global Metadata -->
-<link rel="mask-icon" href="/favicon.svg" color="#101828" />
-<link rel="sitemap" href="/sitemap-index.xml" />
-<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS" />
+<link rel="mask-icon" href="/favicon.svg" color="#101828"/>
+<link rel="sitemap" href="/sitemap-index.xml"/>
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS"/>

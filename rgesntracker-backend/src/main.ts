@@ -8,4 +8,4 @@ async function bootstrap() {
   app.enableCors();
   await app.listen(3001);
 }
-bootstrap();
+bootstrap().then(r => console.log('Server started'));

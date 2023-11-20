@@ -81,10 +81,7 @@ export class AuditService {
                 `,
             };
 
-              console.log(mailOptions);
-
               await transporter.sendMail(mailOptions);
-              console.log("sendmail")
 
             const expirationTime = new Date(Date.now() + 2 * 7 * 24 * 60 * 60 * 1000); // 2 weeks from now
             schedule.scheduleJob(expirationTime, async () => {
@@ -98,7 +95,6 @@ export class AuditService {
             return audit;
         }
         catch (error) {
-            console.log(error);
             throw new InternalServerErrorException();
         }
 
@@ -118,13 +114,11 @@ export class AuditService {
     async updateAudit(token: string, criteria: Criteria[]): Promise<Audit> {
         const audit = await this.auditRepository.getAudit(token);
         audit.criteria = criteria;
-        console.log(criteria);
         try {
             await audit.save();
             return audit;
         }
         catch (error) {
-            console.log(error);
             throw new InternalServerErrorException();
         }
     }
@@ -136,7 +130,6 @@ export class AuditService {
             return audits;
         }
         catch (error) {
-            console.log(error);
             throw new InternalServerErrorException();
         }
     }
