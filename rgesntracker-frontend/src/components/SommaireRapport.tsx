@@ -13,7 +13,7 @@ const sections: SectionItem[] = [
 
 const SommaireComponent: React.FC = () => {
     return (
-        <GreyContainer>
+        <GreyContainer flexDirection="flex-col">
             <div className="flex flex-wrap justify-between">
                 {sections.map((section, index) => (
                     <div key={index} className="mb-4 w-full md:w-1/3 lg:w-1/4 px-2">

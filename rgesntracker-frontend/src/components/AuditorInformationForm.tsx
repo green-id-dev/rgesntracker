@@ -31,7 +31,7 @@ const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({
     }
 
     return (
-        <GreyContainer>
+        <GreyContainer flexDirection="flex-col">
             <TitleBlocks text="Informations sur l’auditeur ou auditrice de l’audit"/>
             <div className="grid gap-4 mt-4 md:grid-cols-2">
                 <div>

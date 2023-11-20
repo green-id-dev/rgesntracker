@@ -13,7 +13,7 @@ const SiteInformationForm: React.FC<SiteInformationFormProps> = ({url, siteName,
 
 
     return (
-        <GreyContainer>
+        <GreyContainer flexDirection="flex-col">
             <TitleBlocks text="Informations sur le site à auditer"/>
             <div className="grid gap-4 mt-4 md:grid-cols-2">
                 <div>
