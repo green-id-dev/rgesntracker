@@ -7,7 +7,7 @@ A simple tool for tracking and displaying the current status of the [RGESN](http
 $ npm install
 
 # Run the program
-$ npm true start
+$ npm run start
 ```
 
 ## License
