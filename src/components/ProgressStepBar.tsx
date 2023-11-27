@@ -29,7 +29,7 @@ const ProgressStepBar: React.FC<ProgressStepBarProps> = ({step}) => {
 
             <div
                 className="flex flex-col md:flex-row justify-between w-full text-xs md:text-2xl font-bold text-center mt-4">
-                <div>Informations</div>
+                <p>Informations</p>
                 <div className='mt-2 md:mt-0 md:ml-10'>Réalisation de l'audit</div>
                 <div className='mt-2 md:mt-0'>Rapport de l'audit</div>
             </div>

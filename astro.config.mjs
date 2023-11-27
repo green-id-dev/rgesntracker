@@ -7,13 +7,14 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://rgesn.meexr.fr",
   integrations: [react(), tailwind(), sitemap()],
   vite: {
     ssr: {
       noExternal: ["smartypants"]
     }
   },
-  output: "hybrid",
+  output: "server",
   adapter: node({
     mode: "standalone"
   })

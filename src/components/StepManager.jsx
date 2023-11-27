@@ -19,27 +19,6 @@ const StepManager = ({audits = null}) => {
         }
     }, [criteresResult]);
 
-    /*const saveAudit = async () => {
-      const body = criteresResult;
-      try {
-        const options = {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: body ? JSON.stringify(body) : undefined,
-        };
-        const response = await fetch(host + "audit/" + audit.token, options);
-        const data = await response.json();
-        setAudit(data);
-      }
-      catch (error) {
-        console.error("Failed to fetch data:", error);
-        throw error;
-      }
-    }*/
-
-
     const fetchData = async () => {
         try {
             const response = await fetch(
@@ -83,7 +62,7 @@ const StepManager = ({audits = null}) => {
     };
 
     useEffect(() => {
-        fetchData().then(r => console.log("data fetched"));
+        fetchData();
     }, []);
 
 
