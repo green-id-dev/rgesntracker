@@ -35,12 +35,12 @@ const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({
             <TitleBlocks text="Informations sur l’auditeur ou auditrice de l’audit"/>
             <div className="grid gap-4 mt-4 md:grid-cols-2">
                 <div>
-                    <label className="block text-gray-700 text-lg font-normal mb-2" htmlFor="site-url">
+                    <label className="block text-gray-700 text-lg font-normal mb-2" htmlFor="name">
                         Nom et prénom (optionnel)
                     </label>
                     <input
                         className="appearance-none border-[1px] border-black rounded-2xl w-full p-4 text-sm text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="site-url"
+                        id="name"
                         type="text"
                         placeholder="Saisir le nom et prénom"
                         value={name}
@@ -49,12 +49,12 @@ const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({
                     <p className="text-sm text-gray-600 mt-2">Le nom et prénom sera affiché sur l’audit</p>
                 </div>
                 <div>
-                    <label className="block text-gray-700 text-lg font-normal mb-2" htmlFor="site-name">
+                    <label className="block text-gray-700 text-lg font-normal mb-2" htmlFor="structure-name">
                         Nom de la structure (optionnel)
                     </label>
                     <input
                         className="appearance-none border-[1px] border-black rounded-2xl w-full p-4 text-sm text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="site-name"
+                        id="structure-name"
                         type="text"
                         placeholder="Saisir le nom de la structure"
                         value={siteName}
@@ -64,12 +64,12 @@ const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({
             </div>
             <div className="grid mt-8 gap-4 md:grid-cols-2">
                 <div>
-                    <label className="block text-gray-700 text-lg font-normal mb-2" htmlFor="site-url">
+                    <label className="block text-gray-700 text-lg font-normal mb-2" htmlFor="email">
                         Adresse e-mail<label className='text-redStrong'> *</label>
                     </label>
                     <input
                         className="appearance-none border-[1px] border-black rounded-2xl w-full p-4 text-sm text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="site-url"
+                        id="email"
                         type="text"
                         placeholder="Saisir l'adresse e-mail"
                         value={email}
