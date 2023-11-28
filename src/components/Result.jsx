@@ -92,7 +92,7 @@ const Result = ({criteres, audit, criteresResult, categories}) => {
                             className="font-arial font-semibold text-lg underline ml-2">
                                 {audit.url}
                             </a>
-                            <img src="/link.svg" className="w-4 h-4 ml-1 my-auto" loading="lazy"/>
+                            <img src="/link.svg" className="w-4 h-4 ml-1 my-auto" loading="lazy" alt="Open the link in a new tab"/>
                         </div>
                         <div className="flex flex-row">
                             <p className="text-black text-lg font-normal">Audit commencé le:</p>
