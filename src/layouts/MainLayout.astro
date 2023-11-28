@@ -4,6 +4,8 @@ import NavBar from "../components/NavBar.tsx"
 import Hero from '../components/Hero.astro';
 import ScrollToTopButton from '../components/ScrollToTopButton.tsx';
 
+Astro.response.headers.set('Cache-Control', 'public, max-age=0, s-maxage=3600, stale-while-revalidate=5400');
+
 export type Props = HeadProps
 
 const {...head} = Astro.props
