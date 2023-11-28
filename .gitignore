@@ -3,6 +3,8 @@ dist/
 
 # generated types
 .astro/
+.idea/
+.vscode/
 
 # dependencies
 node_modules/
@@ -23,3 +25,5 @@ pnpm-debug.log*
 # deploiement script
 deploy.sh
 ecosystem.config.cjs
+
+

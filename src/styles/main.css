@@ -6,3 +6,47 @@
     --form-control-color: #d1d5db;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media print {
+    /* Police à l'encre claire et économique */
+    body {
+        font-family: 'Century Gothic', 'Arial', sans-serif;
+        color: #000;
+    }
+
+    /* Masquer les éléments non nécessaires à l'impression */
+    header, footer, nav, aside, .no-print {
+        display: none;
+    }
+
+    /* Simplifier la mise en page pour l'impression */
+    main, article, section {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Réduire la taille des marges */
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Afficher uniquement les images essentielles */
+    img {
+        display: none;
+    }
+
+    /* Vous pouvez spécifier des règles pour afficher certaines images si nécessaire */
+    img.important-image {
+        display: block;
+    }
+
+    /* Simplifier les tableaux si nécessaire */
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+    }
+}

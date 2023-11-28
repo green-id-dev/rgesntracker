@@ -117,9 +117,9 @@ const Category = ({
                     </div>
                     <button onClick={() => setRenderCriteres(!renderCriteres)} className="self-center">
                         {renderCriteres ? (
-                            <img src="/minus.svg" className="w-6 h-6" alt="Collapse"/>
+                            <img src="/minus.svg" className="w-6 h-6" alt="Collapse" loading="lazy"/>
                         ) : (
-                            <img src="/plus.svg" className="w-6 h-6" alt="Expand"/>
+                            <img src="/plus.svg" className="w-6 h-6" alt="Expand" loading="lazy"/>
                         )}
                     </button>
                 </div>

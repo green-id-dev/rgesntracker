@@ -13,8 +13,6 @@ $ npm install
 $ npm run start
 ```
 
-> TODO : Improve responsive experience
-
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
@@ -23,3 +21,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 * [Samuel Trouchaud, Daniel Doughan] For the front-end Development 
 * [Daniel Doughan] For the back-end Development 
 * [Romane Dedieu] For the Design
+
+> TODO : Improve responsive experience
+> TODO : Improve PDF rendering
