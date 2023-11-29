@@ -24,7 +24,7 @@ const siteInfo: SiteInfo = {
     description:
         "RGESN Tracker est un outil pour le suivi et l'affichage du statut du Référentiel Général d'Écoconception des Services Numériques (RGESN), favorisant une approche durable dans le domaine numérique.",
     image: {
-        src: "/audit-icon.svg",
+        src: "/og/banner.png",
         alt: "Suivi Éco-conception Numérique",
     },
     socialLinks: [
