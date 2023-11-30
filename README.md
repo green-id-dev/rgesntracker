@@ -1,4 +1,4 @@
-![Auto-diagnostic de l'éco-conception d'un site internet avec le RGESN](public/og/banner.png "Auto-diagnostic de l'éco-conception d'un site internet avec le RGESN")
+![Auto-diagnostic de l'éco-conception d'un site internet avec le RGESN](/public/og/banner.png "Auto-diagnostic de l'éco-conception d'un site internet avec le RGESN")
 
 <p align="center">
   <br/>
