@@ -22,7 +22,7 @@ const StepManager = ({audits = null}) => {
     const fetchData = async () => {
         try {
             const response = await fetch(
-                "https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/export/referentiel-general-ecoconception-version-v1.json"
+                "/rgesn.json"
             );
             const jsonData = await response.json();
             setData(jsonData);
