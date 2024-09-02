@@ -8,7 +8,14 @@ import compress from "astro-compress";
 // https://astro.build/config
 export default defineConfig({
   site: "https://rgesn.meexr.fr",
-  integrations: [react(), tailwind(), sitemap(), compress()],
+  integrations: [react(), tailwind(), sitemap(), 
+  (await import("astro-compress")).default({
+			CSS: true,
+			HTML: true,
+			Image: true,
+			JavaScript: true,
+			SVG: false,
+		})],
   vite: {
     ssr: {
       noExternal: ["smartypants"]
