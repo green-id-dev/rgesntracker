@@ -12,7 +12,13 @@ try {
     if (!response.ok) {
         data = {error: true, status: response.status};
     } else {
-        data = await response.json();
+        const responseText = await response.text();
+
+        if (responseText) {
+            data = JSON.parse(responseText);
+        } else {
+            data = { error: true, status: 'Empty response body' };
+        }
     }
 } catch (error) {
     console.error("Erreur lors de la récupération des données:", error);
