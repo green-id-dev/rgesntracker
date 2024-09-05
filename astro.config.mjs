@@ -21,6 +21,7 @@ export default defineConfig({
       noExternal: ["smartypants"]
     }
   },
+  server: { port: 8080 },
   output: "server",
   adapter: node({
     mode: "standalone"
