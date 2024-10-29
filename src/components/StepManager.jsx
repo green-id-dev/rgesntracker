@@ -22,7 +22,7 @@ const StepManager = ({audits = null}) => {
     const fetchData = async () => {
         try {
             const response = await fetch(
-                "/rgesn.json"
+                "/criteria.json"
             );
             const jsonData = await response.json();
             setData(jsonData);
