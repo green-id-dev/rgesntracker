@@ -25,6 +25,4 @@ pnpm-debug.log*
 
 # deploiement script
 deploy.sh
-ecosystem.config.cjs
-
 

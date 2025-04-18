@@ -2,10 +2,14 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import Audit from '../components/Audit';
 import StepManager from '../components/StepManager';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <MainLayout image={{ src: "/og/banner.png", alt: "RGESN Tracker - Suivi Éco-conception Numérique." }}>
 
     <StepManager client:load></StepManager>
+    <About client:load />
+    <Footer client:load />
 
 </MainLayout>

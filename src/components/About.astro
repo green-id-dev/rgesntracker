@@ -1,0 +1,42 @@
+---
+import Button from "./Button";
+---
+
+<div class="w-full h-[1px] bg-gray-300 my-20"></div>
+
+<section class="py-20 bg-[#F9FBFA]" id="a-propos">
+  <div class="container mx-auto px-4">
+    <div class="flex w-fit border-black border-2 rounded-full bg-[#90D8B2] mx-auto px-4">
+      <p class="flex text-base font-dm items-center text-center p-2">À propos</p>
+    </div>
+    <h2 class="text-3xl font-bold font-dm text-center my-4">Qui sommes-nous ?</h2>
+    <p class="text-gray-600 font-dm text-center mb-16">
+      Chez Green-id, nous combinons passion pour la technologie et engagement pour la sobriété afin de créer des solutions numériques innovantes et sobres. Notre mission est de transformer l'industrie du numérique en intégrant l'éco-conception au cœur de chaque projet.
+    </p>
+    <div class="container p-10 rounded-xl flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div class="lg:w-1/2">
+        <img src="/images/greenid.png" alt="Logo Green-id" class="w-72 h-auto max-w-3xl">
+        <h1 class="text-2xl font-dm lg:text-3xl my-6">
+          Une agence de numérique  <span class="font-pop lg:text-3xl">responsable</span>
+        </h1>
+        <p class="text-gray-600 font-dm mb-6">
+          Nous sommes une agence spécialisée dans le développement web éco-responsable. 
+          Notre mission est de rendre le web plus accessible et durable pour tous.
+        </p>
+        <Button
+          href="https://green-id.dev"
+          className="flex px-4 bg-primary !text-black rounded-full hover:bg-primary/80 transition-all"
+        >
+          Visiter notre site →
+        </Button>
+      </div>
+      <div class="lg:w-1/3">
+        <img 
+          src="/images/sensibilisation_le_comptoir_picture.jpg" 
+          alt="Notre équipe au travail"
+          class="rounded-lg shadow-lg w-full"
+        />
+      </div>
+    </div>
+  </div>
+</section>

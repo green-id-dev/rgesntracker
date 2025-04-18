@@ -7,6 +7,9 @@ import DashboardGauges from './DashboardGauges.tsx';
 import ScrollContext from "./context/ScrollContext.tsx";
 
 export default function Audit({criteres, audit, criteresResult, setCriteresResult, categories, setStep, setAudit}) {
+    if (!criteres || !criteresResult) {
+        return <div className="text-center p-8 text-gray-600">Chargement des critères...</div>;
+    }
     const [data, setData] = useState({});
 
     const [filters, setFilters] = useState(["Tous"]);
@@ -93,6 +96,7 @@ export default function Audit({criteres, audit, criteresResult, setCriteresResul
 
 
     return (
+        
         <ScrollContext.Provider value={{scrollToCategory, registerRef}}>
 
 

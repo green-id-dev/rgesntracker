@@ -14,7 +14,7 @@ const StepManager = ({audits = null}) => {
 
 
     useEffect(() => {
-        if (criteres.length === criteresResult.length && criteresResult.length !== 0) {
+        if (criteres?.length === criteresResult?.length && criteresResult?.length !== 0) {
             setStep(3);
         }
     }, [criteresResult]);
@@ -28,9 +28,19 @@ const StepManager = ({audits = null}) => {
             setData(jsonData);
             const uniqueCategories = [...new Set(jsonData.criteres.map((c) => c.thematique))];
             setCategories(uniqueCategories);
-            setCriteres(jsonData.criteres.map((c) => {
-                return {id: c.id, url: c.url, critere: c.critere, thematique: c.thematique}
-            }));
+            setCriteres(jsonData.criteres.map((c) => ({
+                id: c.id,
+                url: `https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/critere/${c.id}`,
+                critere: c.critere,
+                thematique: c.thematique,
+                objectif: c.objectif,
+                miseEnOeuvre: c.miseEnOeuvre,
+                controle: c.controle,
+                difficulte: c.difficulte,
+                priorite: c.priorite,
+                application: c.application,
+                metiers: c.metiers,
+            })));
 
             let localAudit;
             const auditData = localStorage.getItem("audit");

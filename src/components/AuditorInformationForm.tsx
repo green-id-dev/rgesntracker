@@ -75,9 +75,16 @@ const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
-                    <p className="text-sm text-gray-600 mt-2">L’adresse mail permettra de vous envoyer les liens de
-                        l’audit</p>
+                    <p className="text-sm text-gray-600 mt-2">
+                        L’adresse mail permettra de vous envoyer le lien pour reprendre votre audit plus tard.
+                    </p>
+
+                    <div className="bg-green-50 text-green-800 border border-green-200 rounded-xl p-4 mt-4 text-sm">
+                    <p><strong>🛡️ Confidentialité assurée :</strong> Votre adresse ne sera jamais utilisée à des fins commerciales.</p>
+                    <p>Elle ne sert qu’à vous transmettre un lien unique pour retrouver votre audit en cours ou sauvegardé.</p>
+                    </div>
                 </div>
+                {/* 
                 <div className='flex flex-col gap-3'>
                     <p className="text-lg text-black font-semibold">Afficher l’adresse mail dans l’audit ?</p>
                     <label className="flex flex-wrap items-center">
@@ -103,6 +110,7 @@ const AuditorInformationForm: React.FC<AuditorInformationFormProps> = ({
                         <span className="ml-2">Oui, je souhaite qu’elle soit affichée</span>
                     </label>
                 </div>
+                */}
             </div>
         </GreyContainer>
     );

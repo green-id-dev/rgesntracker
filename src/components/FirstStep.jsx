@@ -73,7 +73,7 @@ const FirstStep = ({setStep, setAudit, setCriteresResult}) => {
                                     setSelectedSort={setSelectedSort} email={email}
                                     setEmail={setEmail}></AuditorInformationForm>
             <div className="mx-auto flex w-full mb-8">
-                <Button onClick={postAudit} text="Commencer l'audit"></Button>
+                <Button onClick={postAudit}>Commencer l'audit →</Button>
             </div>
 
 

@@ -12,11 +12,11 @@ interface FilterProps {
 
 const OrganisationResults: React.FC<FilterProps> = ({values, onChange, criteres, criteresFilled, onSortChange}) => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-3">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-stretch">
+            <div className="col-span-1 md:col-span-3 h-full">
                 <Filter values={values} onChange={onChange} criteres={criteres} criteresFilled={criteresFilled}/>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-1 h-full">
                 <Sort onSortChange={onSortChange}/>
             </div>
         </div>
